@@ -8,12 +8,6 @@ This project is designed for practicing TypeScript concepts and features. It ser
 - Focus on key TypeScript concepts such as types, interfaces, and generics
 - Real-time feedback on code execution (if applicable)
 
-## Technologies Used
-
-- TypeScript
-- HTML
-- CSS (optional, for styling)
-
 ## Getting Started
 
 ### Prerequisites
@@ -56,6 +50,12 @@ tsc
 1.  Explore the provided TypeScript examples and challenges.
 2.  Modify the code or add new examples to deepen your understanding.
 3.  Use the TypeScript compiler to see the effects of your changes in real time.
+
+## Technologies Used
+
+- TypeScript
+- HTML
+- CSS (optional, for styling)
 
 ## Acknowledgements
 
