@@ -20,13 +20,13 @@ This project is designed for practicing TypeScript concepts and features. It ser
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/BhoomiGohil/TypeScript-Fundamentals.git
+git clone https://github.com/BhoomiGohil/TS-Fundamentals.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd TypeScript-Fundamentals
+cd TS-Fundamentals
 ```
 
 3. Install the TypeScript compiler (if not already installed):
