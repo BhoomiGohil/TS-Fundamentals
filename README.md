@@ -1,25 +1,62 @@
-# Practice
+# TypeScript Practice
 
-You will need a copy of Node.js as an environment to run the package. Then you use a dependency manager like npm, yarn or pnpm to download TypeScript into your project.
+This project is designed for practicing TypeScript concepts and features. It serves as a hands-on environment to experiment with TypeScript syntax, types, and functionalities, helping to enhance your understanding of this powerful programming language.
 
-npm install typescript --save-dev
+## Features
 
-Now, you have to create tsconfig.json file using following command:
+- Various TypeScript exercises and examples
+- Focus on key TypeScript concepts such as types, interfaces, and generics
+- Real-time feedback on code execution (if applicable)
 
-npx tsc --init
+## Technologies Used
 
-You can then run the TypeScript compiler using one of the following commands:
+- TypeScript
+- HTML
+- CSS (optional, for styling)
 
-npx tsc
+## Getting Started
 
-Note: Link your compile file to HTML file/files and also don't forgot to run your project using live server extension if you are using Visual Studio.
+### Prerequisites
 
-Step:
+- Node.js and npm installed on your machine
+- Basic understanding of JavaScript
 
-1. Navigate to Extensions.
-2. Search for "Live Server" and install it.
-3. Click on Go Live option to run project.
+### Installation
 
-Note: You have to run npx tsc command for compiling the file after update.
+1. Clone the repository:
 
-Happy coding.
+```bash
+git clone https://github.com/BhoomiGohil/TypeScript-Practice.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd TypeScript-Practice
+```
+
+3. Install the TypeScript compiler (if not already installed):
+
+```bash
+npm install -g typescript
+```
+
+### Running the Code
+
+1. Compile the TypeScript files:
+
+```bash
+tsc
+```
+
+2. Open the generated index.html file in your web browser to view the application or run the compiled JavaScript files as needed.
+
+## Usage
+
+1.  Explore the provided TypeScript examples and challenges.
+2.  Modify the code or add new examples to deepen your understanding.
+3.  Use the TypeScript compiler to see the effects of your changes in real time.
+
+## Acknowledgements
+
+Inspired by various TypeScript resources and courses.
