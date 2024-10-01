@@ -12,8 +12,6 @@ This repository contains fundamental concepts and code examples to help understa
   - [Interfaces](#interfaces)
   - [Classes](#classes)
   - [Modules](#modules)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
