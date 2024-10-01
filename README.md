@@ -1,62 +1,139 @@
-# TypeScript Practice
+# TS-Fundamentals
 
-This project is designed for practicing TypeScript concepts and features. It serves as a hands-on environment to experiment with TypeScript syntax, types, and functionalities, helping to enhance your understanding of this powerful programming language.
+This repository contains fundamental concepts and code examples to help understand TypeScript, a strongly typed superset of JavaScript. The code included covers essential TypeScript features such as type annotations, functions, interfaces, classes, and modules.
 
-## Features
+## Table of Contents
 
-- Various TypeScript exercises and examples
-- Focus on key TypeScript concepts such as types, interfaces, and generics
-- Real-time feedback on code execution (if applicable)
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Code Overview](#code-overview)
+  - [Type Annotations](#type-annotations)
+  - [Functions](#functions)
+  - [Interfaces](#interfaces)
+  - [Classes](#classes)
+  - [Modules](#modules)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Getting Started
+## Introduction
 
-### Prerequisites
+TypeScript improves JavaScript by adding static types. This repository explores the fundamental concepts that you need to know in order to work effectively with TypeScript. Each section is focused on different language features, making it easier to get started and apply TypeScript in real projects.
 
-- Node.js and npm installed on your machine
-- Basic understanding of JavaScript
+## Installation
 
-### Installation
+To run the code in this repository, ensure that you have **Node.js** and **TypeScript** installed on your machine.
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/BhoomiGohil/TS-Fundamentals.git
-```
-
-2. Navigate to the project directory:
-
-```bash
-cd TS-Fundamentals
-```
-
-3. Install the TypeScript compiler (if not already installed):
+1. Install Node.js from [here](https://nodejs.org/)
+2. Install TypeScript globally using npm:
 
 ```bash
 npm install -g typescript
 ```
 
-### Running the Code
-
-1. Compile the TypeScript files:
+3. Clone this repository:
 
 ```bash
-tsc
+git clone https://github.com/BhoomiGohil/TS-Fundamentals.git
+cd TS-Fundamentals
 ```
 
-2. Open the generated index.html file in your web browser to view the application or run the compiled JavaScript files as needed.
+4. Compile and run the TypeScript files:
 
-## Usage
+```bash
+tsc index.ts
+node index.js
+```
 
-1.  Explore the provided TypeScript examples and challenges.
-2.  Modify the code or add new examples to deepen your understanding.
-3.  Use the TypeScript compiler to see the effects of your changes in real time.
+## Code Overview
 
-## Technologies Used
+### Type Annotations
 
-- TypeScript
-- HTML
-- CSS (optional, for styling)
+TypeScript allows you to explicitly define types for variables. This helps catch errors at compile time.
 
-## Acknowledgements
+Example:
 
-Inspired by various TypeScript resources and courses.
+```typescript
+let message: string = "Hello, TypeScript!";
+console.log(message);
+```
+
+In this example, the variable `message` is declared with the type `string`, which ensures that only string values can be assigned to it.
+
+### Functions
+
+You can add type annotations to function parameters and return values, providing better readability and debugging.
+
+Example:
+
+```typescript
+function add(a: number, b: number): number {
+  return a + b;
+}
+console.log(add(5, 3));
+```
+
+Here, the function `add` accepts two parameters of type `number` and returns a `number`.
+
+### Interfaces
+
+Interfaces define the structure of objects. They ensure that objects follow a specific shape or contract.
+
+Example:
+
+```typescript
+interface User {
+  name: string;
+  age: number;
+}
+
+const user: User = {
+  name: "John Doe",
+  age: 30,
+};
+
+console.log(user);
+```
+
+In this case, the `User` interface defines that a user object must have `name` as a string and `age` as a number.
+
+### Classes
+
+TypeScript supports object-oriented programming with classes. You can define properties and methods in a class.
+
+Example:
+
+```typescript
+class Animal {
+  name: string;
+
+  constructor(name: string) {
+    this.name = name;
+  }
+
+  speak(): void {
+    console.log(`${this.name} makes a sound.`);
+  }
+}
+
+const dog = new Animal("Dog");
+dog.speak();
+```
+
+In this example, the `Animal` class has a constructor to initialize the `name` property and a method `speak` to print a message.
+
+### Modules
+
+TypeScript supports modules, which allow you to organize your code into separate files.
+
+Example:
+
+```typescript
+// module.ts
+export const greeting = "Hello, World!";
+
+// main.ts
+import { greeting } from "./module";
+console.log(greeting);
+```
+
+This code shows how to define a module and import it into another file.
